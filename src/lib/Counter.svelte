@@ -1,13 +1,17 @@
 <script lang="ts">
-  let count: number = 0
+  let count: number = 0;
+  let value = "Hello ";
   const increment = () => {
-    count += 1
-  }
+    count += 1;
+  };
 </script>
 
 <button on:click={increment}>
   Clicks: {count}
 </button>
+
+<!-- {value} === value="{value}" -->
+Value: <input type="text" {value} />
 
 <style>
   button {

@@ -1,9 +1,14 @@
 <script lang="ts">
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
+  import logo from "./assets/svelte.png";
+  import Counter from "./lib/Counter.svelte";
+  import SimpleComponent from "./lib/SimpleComponent.svelte";
+  import DirectiveHtml from "./lib/DirectiveHtml.svelte";
 </script>
 
 <main>
+  <DirectiveHtml />
+  <SimpleComponent />
+
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello Typescript!</h1>
 
@@ -22,8 +27,8 @@
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
   main {

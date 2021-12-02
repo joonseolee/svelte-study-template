@@ -1,6 +1,7 @@
 # Svelte + TS + Vite
 
-This template should help get you started developing with Svelte and TypeScript in Vite as a newbie.
+This template should help get you started developing with Svelte and TypeScript in Vite as a newbie.  
+I classified some components each folder only few didn't 😄.  
 
 ## Recommended IDE Setup
 

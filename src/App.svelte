@@ -3,26 +3,37 @@
   import Counter from "./lib/Counter.svelte";
   import SimpleComponent from "./lib/SimpleComponent.svelte";
   import DirectiveHtml from "./lib/DirectiveHtml.svelte";
+  import ReactiveDeclaration from "./lib/ReactiveDeclaration.svelte";
+  import Nested from "./lib/Nested.svelte";
+  import SpreadProps from "./lib/SpreadProps.svelte";
+  import IfLogic from "./lib/IfLogic.svelte";
+  import LoopLogic from "./lib/LoopLogic.svelte";
+  import DomEvent from "./lib/event/DomEvent.svelte";
+  import EventModifier from "./lib/event/EventModifier.svelte";
+  import Event from "./lib/event/Event.svelte";
+  import Binding from "./lib/binding/Binding.svelte";
+
+  const spreadPropsValue = {
+    name: "dd",
+    version: 1,
+    speed: 1231,
+    href: "www.naver.com",
+  };
 </script>
 
 <main>
-  <DirectiveHtml />
+  <!-- <DirectiveHtml />
   <SimpleComponent />
-
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello Typescript!</h1>
-
+  <ReactiveDeclaration />
+  <Nested answer={"42"} />
+  <SpreadProps {...spreadPropsValue} />
+  <IfLogic />
   <Counter />
+  <LoopLogic />
+  <DomEvent /> -->
 
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
+  <Event />
+  <Binding />
 </main>
 
 <style>

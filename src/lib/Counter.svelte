@@ -1,13 +1,22 @@
 <script lang="ts">
   let count: number = 0;
   let value = "Hello ";
-  const increment = () => {
+
+  $: if (count >= 10) {
+    alert("count is dangerously high!");
+    count = 9;
+  }
+
+  const increment = (event) => {
+    console.log("event called");
+    console.log(event);
     count += 1;
   };
 </script>
 
 <button on:click={increment}>
   Clicks: {count}
+  {count < 2 ? "time" : "times"}
 </button>
 
 <!-- {value} === value="{value}" -->

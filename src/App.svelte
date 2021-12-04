@@ -14,6 +14,7 @@
   import Binding from "./lib/binding/Binding.svelte";
   import LifeCycle from "./lib/lifecycle/LifeCycle.svelte";
   import Store from "./lib/store/Store.svelte";
+  import SlotDefault from "./lib/slot/SlotDefault.svelte";
 
   const spreadPropsValue = {
     name: "dd",
@@ -38,6 +39,7 @@
   <LifeCycle />-->
 
   <Store />
+  <SlotDefault />
 </main>
 
 <style>

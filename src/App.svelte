@@ -13,6 +13,7 @@
   import Event from "./lib/event/Event.svelte";
   import Binding from "./lib/binding/Binding.svelte";
   import LifeCycle from "./lib/lifecycle/LifeCycle.svelte";
+  import Store from "./lib/store/Store.svelte";
 
   const spreadPropsValue = {
     name: "dd",
@@ -31,11 +32,12 @@
   <IfLogic />
   <Counter />
   <LoopLogic />
-  <DomEvent /> -->
-
+  <DomEvent /> 
   <Event />
   <Binding />
-  <LifeCycle />
+  <LifeCycle />-->
+
+  <Store />
 </main>
 
 <style>

@@ -15,6 +15,7 @@
   import LifeCycle from "./lib/lifecycle/LifeCycle.svelte";
   import Store from "./lib/store/Store.svelte";
   import SlotDefault from "./lib/slot/SlotDefault.svelte";
+  import Module from "./lib/module/Module.svelte";
 
   const spreadPropsValue = {
     name: "dd",
@@ -36,10 +37,11 @@
   <DomEvent /> 
   <Event />
   <Binding />
-  <LifeCycle />-->
-
+  <LifeCycle />
   <Store />
-  <SlotDefault />
+  <SlotDefault />-->
+
+  <Module />
 </main>
 
 <style>
